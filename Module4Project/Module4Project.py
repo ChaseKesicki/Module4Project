@@ -62,7 +62,7 @@ class DunnDelivery:
     # Mehtod to calculate the delivery time based on location and time of day
     def estimate_delivery(self, location, current_hour):
         # Calculate the base time
-        base_time = self.delivery_time[location]
+        base_time = self.delivery_locations[location]
 
         # Calculate the delivery time based on the time of day (adjust for  busy times of day)
         if (9 <= current_hour <= 10) or (11 <= current_hour <= 13):
